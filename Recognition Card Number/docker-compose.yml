@@ -1,0 +1,13 @@
+version : "2.4"
+services:
+    cardnum:
+        build:
+            context: .
+
+        volumes: 
+            - .:/home/recog_cardnum
+
+        environment: 
+            TZ : "Asia/Seoul"
+            PYTHONPATH: "/home/recog_cardnum"
+
