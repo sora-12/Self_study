@@ -1,6 +1,7 @@
 ### 음성에서 특징을 추출하여 분류하고 예측하는 프로젝트입니다.
 
 
+
 |ㅡfeat_extract.py 
 |ㅡmodels 
    |ㅡcnn.py 
