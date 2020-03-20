@@ -2,15 +2,6 @@
 
 
 
-|ㅡfeat_extract.py 
-|ㅡmodels 
-   |ㅡcnn.py 
-   |ㅡnn.py 
-   |ㅡsvm.py 
-   |ㅡlogistic.py 
-|ㅡdata <br>
-   |ㅡothers(label 0) 
-   |ㅡtarget(label 1) 
 
 추출되는 변수(특징)
 - mfcc (mel-frequency cepstrum) 
