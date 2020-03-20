@@ -1,11 +1,8 @@
 
 #!/usr/bin/env python
 # coding= UTF-8
-#
-# Author: Fing
 # https://github.com/mtobeiyf/audio-classification
-# Date  : 2017-12-03
-#
+
 
 import code
 import glob
@@ -54,7 +51,7 @@ def parse_audio_files(parent_dir,file_ext='*.wav'):
     features, labels = np.empty((0,193)), np.empty(0)
     # 파일이름과  label feature 까지 볼 수 있는 list
     totals=[]
-        # others 0 son 1
+        # others 0 target 1
     for label, sub_dir in enumerate(sub_dirs):
         if os.path.isdir(os.path.join(parent_dir, sub_dir)):
             print('파일 있음')
@@ -95,7 +92,7 @@ def parse_predict_files(parent_dir,file_ext='*.wav'):
 def main():
     # Get features and labels
     if not os.path.exists('feat.npy'):
-        features, labels,totals = parse_audio_files(r'D:\parentsvoice_conversion2\resources\datasets')
+        features, labels,totals = parse_audio_files(r'C:\Users\Owner\tmp_python\data')
         np.save('feat.npy', features)
         np.save('label.npy', labels)
         # list to csv
