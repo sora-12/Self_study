@@ -1,7 +1,7 @@
 ### 음성에서 특징을 추출하여 분류하고 예측하는 프로젝트입니다.
 Tensorflow 1.x
 
-추출되는 변수(특징)
+#### 추출되는 변수(특징)
 ---------------
 - mfcc (mel-frequency cepstrum) 
 - chroma
