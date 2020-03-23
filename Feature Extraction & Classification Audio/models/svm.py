@@ -11,15 +11,17 @@ sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 import feat_extract
 
 
-feat_extract.main()
+feat_extract.main(setting_first=False)
 # Load data from numpy file
-X_train =  np.load('feat.npy')
+X_train=  np.load('feat_big.npy')
 # ravel / 다차원 배열 1차원 배열로 
-y_train =  np.load('label.npy').ravel()
+y_train=  np.load('label_big.npy').ravel()
 
-X_test=np.load('predict_feat_good.npy')
-y_test=np.load('predict_label_good.npy').ravel()
+X_test=np.load('predict_feat_big.npy')
+y_test=np.load('predict_label_big.npy').ravel()
 # Split data into training and test subsets
+
+
 # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=0)
 
 # Simple SVM

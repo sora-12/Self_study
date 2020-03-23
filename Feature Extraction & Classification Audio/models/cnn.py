@@ -26,8 +26,8 @@ def train(args):
     X_train =  np.load('feat.npy')
     y_train =  np.load('label.npy').ravel()
 
-    X_test=np.load('predict_feat_good.npy')
-    y_test=np.load('predict_label_good.npy').ravel()
+    X_test=np.load('predict_feat.npy')
+    y_test=np.load('predict_label.npy').ravel()
 
 
     # Count the number of sub-directories in 'data'
