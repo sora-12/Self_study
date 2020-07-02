@@ -1,0 +1,12 @@
+    
+ 
+version: '2.3'
+services:
+    handson:
+      build:
+        context: .
+      volumes:
+        - .:/home/Handson-ML  #Dockerfile의 work directory에서 container에 공유할 경로
+      ports:
+        - "8888:8888"
+      command: jupyter notebook --ip=0.0.0.0 --allow-root --port=8888 
