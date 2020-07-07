@@ -10,3 +10,5 @@ services:
       ports:
         - "8888:8888"
       command: jupyter notebook --ip=0.0.0.0 --allow-root --port=8888 
+
+
