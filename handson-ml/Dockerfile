@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 WORKDIR /home/Handson-ML
 
 
-RUN apt-get update && yes | apt-get upgrade
+RUN apt-get update && yes | apt-get upgrade                                                                                                                             
 RUN apt-get install -y build-essential
 
 RUN apt-get install python3.6 -y python3-pip -y
